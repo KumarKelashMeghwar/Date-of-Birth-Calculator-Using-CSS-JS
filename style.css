@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: rgb(236,236,236);
+}
+
+#container{
+    width: 800px;
+    height: 500px;
+    background-color: #bb7f8e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px #845460;
+}
+
+#container .part2, .part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .part1{
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container .part1 h4{
+    font-size: 14px;
+}
+
+#container .part1 label{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#container .part1 .input{
+    background-color: #284F60;
+    border: none;
+    outline: none;
+    padding: 3px;
+    margin-top: 3px;
+    color: #EAD3CB;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#container .part2 .first-div,.second-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .part2 .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 130px;
+    background-color: #BDC7C9;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#container .part2 .box h3{
+    background-color: #284F60;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+
+#container .part2 .box .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    font-size: large;
+    color:#284F60;
+    
+}
+
+
+@media only screen and (max-width: 500px){
+
+    #container{
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+    }
+
+    #container .part1 label{
+        margin-right: 0;
+    }
+
+    #container .part1{
+        width: 350px;
+        justify-content: flex-start;
+    }
+
+    #container .part1 h4{
+        width: 190px;
+    }
+
+    #container .part2 .box,#container .part2 .box h3{
+        width: 100px;
+    }
+
+}
+
