@@ -21,7 +21,7 @@ body{
 #container{
     width: 800px;
     height: 500px;
-    background-color: #bb7f8e;
+    background-color: #f28adb;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,7 +105,8 @@ body{
 @media only screen and (max-width: 480px){
 
     #container{
-        width: 350px;
+       width: 341px;
+        margin-left: 10px;
         height: 500px;
         padding: 10px;
     }
@@ -124,7 +125,7 @@ body{
     }
 
     #container .part2 .box,#container .part2 .box h3{
-        width: 100px;
+        width: 80px;
     }
 
 }
